@@ -1,0 +1,92 @@
+/* stile generale */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+
+main{
+    height: 100vh;
+}
+/* top screen */
+#top-row{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 500;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#top-col{
+    display: flex;
+    padding: 10px 5px 0 0;
+}
+
+button{
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.icons button{
+    font-size: 18px;
+    color: white;
+    background-color: rgb(93, 93, 93);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.griglia button{
+    width: 150px;
+    margin-right: 20px;
+}
+
+.full-screen{
+    padding-right: 5px;
+}
+
+.padding{
+    padding-top: 100px;
+    margin-bottom: 20px;
+}
+
+/* main screen */
+#main-row{    
+    width: 85%;  
+    margin: 0 auto;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    /* debug */
+    height: 700px;
+}
+
+.main-col{
+    /* debug */
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+}
+
+/* bottom screen */
+#bottom-row{
+    display: flex;
+    /* debug */
+    height: 150px; 
+    border: 1px solid white;
+}
+
+.bottom-col{
+    display: flex;
+    /* debug */
+    border: 1px solid white;
+    flex-grow: 1;
+}
