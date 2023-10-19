@@ -10,9 +10,10 @@ body{
 }
 
 
-main{
+#container{
     height: 100vh;
 }
+
 /* top screen */
 #top-row{
     position: fixed;
@@ -36,8 +37,8 @@ button:hover {
     cursor: pointer;
 }
 
-.icons button{
-    font-size: 18px;
+.top-bar-icons  button{
+    font-size: 16px;
     color: white;
     background-color: rgb(93, 93, 93);
     border-radius: 10px;
@@ -53,8 +54,8 @@ button:hover {
     padding-right: 5px;
 }
 
-.padding{
-    padding-top: 100px;
+.screen-gap{
+    padding-top: 80px;
     margin-bottom: 20px;
 }
 
@@ -78,15 +79,89 @@ button:hover {
 
 /* bottom screen */
 #bottom-row{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-top: 30px;
     display: flex;
-    /* debug */
-    height: 150px; 
-    border: 1px solid white;
+    height: 100px; 
+    width: 100%;
+
 }
 
 .bottom-col{
     display: flex;
-    /* debug */
-    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f0f;
+}
+
+.col-sx{
+  width: 200px;
+}
+
+.bottom-bar-icons{
+display: flex;
+justify-content: flex-start;
+}
+
+.bottom-bar-icons button{
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+    margin-left: 10px;
+}
+
+.fa-angle-up{
+    font-size: 14px;
+}
+
+.fa-video{
+    margin-left: 20px;
+}
+
+.bottom-bar-icons span{
+    display: block;
+}
+
+button span{
+    font-size: 18px;
+}
+
+.col-cx{
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.col-cx button{
+    margin: 0 10px;
+}
+
+.col-dx{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: #2f2f2f;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.button-container > button{
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: red;
+}
+.button-container span{
+    
+}
+.col-dx:hover span{
+    cursor: pointer;
 }
